@@ -1,22 +1,33 @@
+import math
 import pygame
+from point import Point
 
 
 class Line:
 
-    def __init__(self, head_x, head_y, tail_x, tail_y, color):
-        self.head_x = head_x
-        self.head_y = head_y
-        self.tail_x = tail_x
-        self.tail_y = tail_y
-        self.color = color
-        self._placeholder = pygame.Surface((abs(tail_x-head_x), abs(tail_y-head_y)))
+    width = 1
 
-    def head_position(self) -> pygame.Vector2:
+    def __init__(self, head_point: Point | pygame.Vector2 | tuple, tail_point: Point | pygame.Vector2 | tuple, color):
+        if isinstance(head_point, tuple):
+            self.head_x = head_point[0]
+            self.head_y = head_point[1]
+        else:
+            self.head_x = head_point.x
+            self.head_y = head_point.y
+        if isinstance(tail_point, tuple):
+            self.tail_x = tail_point[0]
+            self.tail_y = tail_point[1]
+        else:
+            self.tail_x = tail_point.x
+            self.tail_y = tail_point.y
+        self.length = math.sqrt(pow(self.tail_x-self.head_x, 2)+pow(self.tail_y-self.head_y, 2))
+        self.color = color
+
+    def head(self) -> pygame.Vector2:
         return pygame.Vector2(self.head_x, self.head_y)
 
-    def tail_position(self) -> pygame.Vector2:
+    def tail(self) -> pygame.Vector2:
         return pygame.Vector2(self.tail_x, self.tail_y)
 
-    def display(self, screen):
-        pygame.draw.line(screen, self.color, self.head_position(), self.tail_position())
-        screen.blit(self._placeholder, self.head_x, self.head_y)
+    def draw(self, screen, color, start_point: Point | pygame.Vector2, length: pygame.Vector2):
+        pygame.draw.line(screen, color, start_point, start_point+length, 1)
