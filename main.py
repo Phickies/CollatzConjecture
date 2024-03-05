@@ -19,15 +19,14 @@ screen = pygame.display.set_mode(size)
 pygame.display.set_caption("CollatzConjecture")
 
 while True:
-
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            pygame.quit()
-            sys.exit()
-
     # Run loop
     if is_running:
         for input_n in input_list:
+
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
 
             # Setup initial position
             position = pygame.Vector2(size[0]/2, size[1]-1)
