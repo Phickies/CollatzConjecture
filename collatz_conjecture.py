@@ -5,9 +5,9 @@ import math
 class Collatz:
 
     def __init__(self, number):
+        self.collatz_list = []
         while number != 1:
             number = collatz(number)
-            self.collatz_list = []
             self.collatz_list.append(number)
 
     def visual_display(self, screen, start_position: pygame.Vector2, length, width, direction_angle, rotation_angle):
