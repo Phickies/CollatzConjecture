@@ -31,8 +31,9 @@ while True:
             # Setup initial position
             position = pygame.Vector2(size[0]/2, size[1]-1)
 
-            clz = Collatz(input_n)
-            clz.visual_display(screen, position, 5, 2, 270, 6.5)
+            if not input_n % 2 == 0:
+                clz = Collatz(input_n)
+                clz.visual_display(screen, position, 5, 2, 270, 6.5)
 
             pygame.display.flip()
 
