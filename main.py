@@ -15,7 +15,7 @@ is_running = True
 
 # Setup display
 pygame.init()
-screen = pygame.display.set_mode(size)
+screen = pygame.display.set_mode(size, pygame.HWSURFACE | pygame.DOUBLEBUF)
 pygame.display.set_caption("CollatzConjecture")
 
 while True:

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9de69304-6296-4ffb-ae58-427cf40a502b" name="Changes" comment="uodate Quit button">
+    <list default="true" id="9de69304-6296-4ffb-ae58-427cf40a502b" name="Changes" comment="add odd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -22,6 +22,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Phickies&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="40cb999a-9e21-4fb1-abd0-d9afdc1d0689" />
+        <option name="url" value="https://github.com/Phickies/CollatzConjecture.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -103,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709622379124</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add odd">
+      <option name="closed" value="true" />
+      <created>1709622618491</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709622618491</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -112,6 +134,7 @@
     <MESSAGE value="finish" />
     <MESSAGE value="uodate everthing" />
     <MESSAGE value="uodate Quit button" />
-    <option name="LAST_COMMIT_MESSAGE" value="uodate Quit button" />
+    <MESSAGE value="add odd" />
+    <option name="LAST_COMMIT_MESSAGE" value="add odd" />
   </component>
 </project>
